@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 </head>
 
@@ -22,21 +24,24 @@
     <!--header section start-->
     <header>
       <div class="wrapper">
+        <!-- Webpage Logo -->
         <h1>
           <a href="index.html" title="Logo">
             <img src="https://via.placeholder.com/171x61.png?text=blue+economy" alt="Logo">
           </a>
         </h1>
+        <!-- Hamburger menu -->
         <div class="menu-wrap">
           <div class="hamburger">
             <span class="line">hamburger lines</span>
             <span class="line">hamburger lines</span>
             <span class="line">hamburger lines</span>
           </div>
+          <!-- Nav Bar -->
           <nav>
             <ul class="menu">
               <li>
-                <a href="index.html" title="Home" class="active">home</a>
+                <a href="index.html"  class="active-menu" title="Home">home</a>
               </li>
               <li>
                 <a href="#FIXME" title="About Us">about us</a>
@@ -53,8 +58,17 @@
             </ul>
           </nav>
         </div> 
-        <div>
-          <span class="search">search</span>
+        <!-- Search Box -->
+        <div class="search-box">
+          <a href="#FIXME" class="search-button" title="Search">search</a>
+          <form class="search-form">
+            <div>
+              <input type="text" name="name" placeholder="Search">
+            </div>
+            <div>
+              <a href="#FIXME" title="Search">search</a>
+            </div>
+           </form>
         </div>
       </div>
     </header>
@@ -65,7 +79,7 @@
       <section class="banner">
         <div class="wrapper">
           <div class="banner-title">
-            <h1>blue economy</h1>
+            <h2>blue economy</h2>
           </div> 
           <div class="banner-description">
             <p>
@@ -80,8 +94,15 @@
       <!--banner section end-->
       <!--event section start-->
       <section>
-        <ul class="wrapper">
+        <div class="wrapper">
           <ul class="event-content">
+            <!-- Event Image -->
+            <li class="event-image">
+              <figure>
+                <img src="https://via.placeholder.com/643x388.png?text=event" alt="Event">
+              </figure>
+            </li>
+            <!-- Event Description -->
             <li class="event-description">
               <h3>world ocean summit 2017</h3>
               <p>
@@ -107,11 +128,6 @@
                 </li>
               </ul>
             </li>
-            <li class="event-image">
-              <figure>
-                <img src="https://via.placeholder.com/643x388.png?text=event" alt="Event">
-              </figure>
-            </li>
           </ul>
         </div>
       </section>
@@ -122,45 +138,64 @@
           <div class="section-title">
             <h4>featured articles</h4>
             <span class="underline">line</span>
-          </div>          
+          </div> 
+          <!-- Articles tabs -->         
           <ul class="articles-content">
             <li class="tabs">
               <ul class="tabs-content">
-                <li class="link active-tab" data="tab1">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link active-tab">
+                  <a href="#tab1" title="Tab One">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab2">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab2" title="Tab Two">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab3">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab3" title="Tab Three">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab4">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab4" title="Tab Four">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab5">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab5" title="Tab Five">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab6">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab6" title="Tab Six">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab7">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab7" title="Tab Seven">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
-                <li class="link" data="tab8">
-                  <span>saving corals</span>
-                  <p>Lorem ipsum dolor sit amet, consectet...</p>
+                <li class="link">
+                  <a href="#tab8" title="Tab Eight">
+                    <span>saving corals</span>
+                    <p>Lorem ipsum dolor sit amet, consectet...</p>
+                  </a>
                 </li>
               </ul>
             </li>
+            <!-- Tabs Description -->
             <li class="articles-description">
+              <!-- Tab One -->
               <div id="tab1" class="tab-content active-tab">
                 <ul class="tab-heading">
                   <li>
@@ -185,6 +220,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Two -->
               <div id="tab2" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -209,6 +245,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Three -->
               <div id="tab3" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -225,7 +262,7 @@
                 </p>
                 <ul class="tab-links">
                   <li>
-                    <a href="#FIXME" class="cpoy">copy</a>
+                    <a href="#FIXME" class="copy">copy</a>
                     <span>economist intelligence unit</span>
                   </li>
                   <li>
@@ -233,6 +270,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Four -->
               <div id="tab4" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -257,6 +295,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Five -->
               <div id="tab5" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -281,6 +320,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Six -->
               <div id="tab6" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -305,6 +345,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Seven -->
               <div id="tab7" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -329,6 +370,7 @@
                   </li>
                 </ul>
               </div>
+              <!-- Tab Eight -->
               <div id="tab8" class="tab-content">
                 <ul class="tab-heading">
                   <li>
@@ -355,7 +397,6 @@
               </div>
             </li>
           </ul>
-          </div>
         </div>
       </section>
       <!--articles section end-->
@@ -366,7 +407,9 @@
             <h4>featured articles</h4>
             <span class="underline">line</span>
           </div>
+          <!-- Carousel start -->
           <ul class="carousel">
+            <!-- Slide One -->
             <li class="slides slide-one active-slide">
               <figure>
                 <img src="https://via.placeholder.com/445x500.png?text=slide+one" alt="Slide One">
@@ -379,6 +422,7 @@
                 </div>
               </div>
             </li>
+            <!-- Slide Two -->
             <li class="slides slide-two">
               <figure>
                 <img src="https://via.placeholder.com/445x500.png?text=slide+two" alt="Slide Two">
@@ -391,6 +435,7 @@
                 </div>
               </div>
             </li>
+            <!-- Slide Three -->
             <li class="slides slide-three">
               <figure>
                 <img src="https://via.placeholder.com/445x500.png?text=slide+three" alt="Slide Three">
@@ -403,6 +448,7 @@
                 </div>
               </div>
             </li>
+            <!-- Slide Four -->
             <li class="slides slide-four">
               <figure>
                 <img src="https://via.placeholder.com/445x500.png?text=slide+four" alt="Slide Four">
@@ -416,7 +462,9 @@
               </div>
             </li>
           </ul>
-          <ul class="slider">
+          <!-- Carousel End -->
+          <!-- Slider Bar Start -->
+          <ul class="slider-bar">
             <li class="bar bar-one">
               <span>slide-bar</span>
             </li>
@@ -430,9 +478,10 @@
               <span>slide-bar</span>
             </li>
           </ul>
+          <!-- Slider Bar End -->
         </div>
       </section>
-      <!--infographic section end-->
+      <!--infographic section end-->      
       <!--newsletter section start-->
       <section class="newsletter">
         <div class="wrapper">
@@ -454,8 +503,11 @@
     <footer>      
       <div class="wrapper">
         <div>
-          <a href="#FIXME" title="World Ocean Initiative">world ocean initiative</a>
+          <h6>
+            <a href="#FIXME" title="World Ocean Initiative">world ocean initiative</a>
+          </h6>         
         </div>
+        <!-- Social Links -->
         <div>
           <ul class="social-links">
             <li>
@@ -481,7 +533,9 @@
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="assets/js/script.js"></script> -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
