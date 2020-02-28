@@ -160,6 +160,69 @@ header .wrapper {
 /*=================================
   banner section styling starts here
 =================================*/
+.banner .wrapper { width: 84%; }
+
+.banner {
+  padding-top: 55px;
+  padding-bottom: 157px;
+  display: flex;   
+  position: relative;
+}
+
+h2 {
+  font-weight: 1000;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.banner-title {
+  width: 33%;
+  padding: 114px 10.4% 116px 1.5%;
+  background-color: #6cb3de;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner-description {
+  width: 33%;
+  padding: 117px 9.5% 117px 9.5%;
+  position: absolute;
+  top: 99px;
+  right: 8%;
+  background-color: #5fb0dd;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  line-height: 26px;
+}
+
+.banner-title::after{
+  content: '';
+  width: 19%;
+  height: 56%;
+  border: 10px solid #64635a;
+  position: absolute;
+  top: 17%;
+  right: 58.5%;
+  z-index: -1;
+  transform: rotateZ(58deg);  
+}
+
+.banner-description::before{
+  content: '';
+  width: 43%;
+  height: 48%;
+  border: 10px solid #64635a;
+  position: absolute;
+  right: 18%;
+  bottom: 33%; 
+  transform: rotatez(60deg);
+  z-index: -1;
+}
+
 
 
 
