@@ -418,13 +418,51 @@ h4 {
 /*=================================
   newsletter section styling starts here
 =================================*/ 
+.newsletter .wrapper { width: 41.5%; }
 
+.newsletter form div:first-child { width: 59%; }
 
+.newsletter{ 
+  padding: 50px 0px; 
+  background-color: #5fb0dd;
+}
 
+.newsletter form {
+  display: flex;
+  justify-content: space-between;
+}
 
+.newsletter span {
+  margin-bottom: 5px;
+  display: block;
+  color: #a1cae3;
+  font-size: small;
+  text-transform: capitalize; 
+}
 
+.newsletter input[type="email"]{
+  width: 100%;
+  padding: 21px 42% 21px 8%;
+  border: none;
+  background-color: #86cbf4;
+  color: #1c4965;
+}
 
+.send{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
+.send::before{
+  content: "\f1d8";
+  padding: 16px 21px;
+  text-indent: 0;
+  float: right;
+  background-color: #fff;
+  color: gray;
+  font-family: FontAwesome;
+  font-size: 25px;
+}
 /*=================================
   newsletter section styling ends here
 =================================*/ 
