@@ -324,9 +324,100 @@ h3 {
   event section styling ends here
 =================================*/
 /*=================================
-  banner section styling starts here
+  articles section styling starts here
 =================================*/
+.articles {
+  margin-top: 88px;
+}
 
+.section-title { 
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+/* .underline{
+  width: 35px;
+  height: 4px;
+  margin: 5px 0;
+  display: block;
+  background: #000;
+  text-indent: -99999px;
+  text-align: center;
+} */
+
+.articles-content {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.link span {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tabs-content .active-tab { background-color: #b7b67c;}
+
+.link{
+  border: 1px solid #b7b67c;
+  margin-bottom: 24px;
+  padding: 9px 8%;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.link::before{
+  content: "\f111";
+  font-family: FontAwesome;
+  color: #b7b67c;
+}
+
+.tabs-content  a h4{
+  color: #3f3f3f;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.tabs-content  a p{
+  color: #3f3f3f;
+  font-size: 14px;
+}
+
+.tabs-content::after{
+  content: "";
+  width: 1.5%;
+  height: 10%;
+  border-radius: 10px;
+  background-color: #b7b67c;
+  position: absolute;
+  top: 18%;
+  right: -1.2%;
+  opacity: 0.5;
+}
+
+
+.articles-description div:not(:first-child){
+  display: none;
+}
+/*=================================
+  articles section styling ends here
+=================================*/
+/*=================================
+  newsletter section styling starts here
+=================================*/ 
 
 
 
@@ -335,9 +426,8 @@ h3 {
 
 
 /*=================================
-  banner section styling ends here
-=================================*/
-
+  newsletter section styling ends here
+=================================*/ 
 
 
 
