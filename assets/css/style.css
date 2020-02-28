@@ -114,6 +114,10 @@ header { margin-top: 21px; }
 
 header a { color: #7c7c7c; }
 
+.menu { margin-top: 8px; }
+
+.menu a { padding-bottom: 5px; }
+
 header .wrapper {
   width: 96.5%;
   display: flex;
@@ -126,10 +130,9 @@ header .wrapper {
 }
 
 .menu li:not(:last-child):after {
-  content: '\f715';
-  padding: 5px;
+  content: '/';
+  padding: 0 15px;
   color: #7c7c7c;
-  font-family: FontAwesome;
   font-size: 20px;
 }
 
@@ -146,9 +149,9 @@ header .wrapper {
   font-size: 25px;
 }
 
-.active-menu {
-  border-bottom: 2px solid red;
-  color: #000;
+.active-menu { 
+  border-bottom: 2px solid #6cb3de;
+  color: #000; 
 }
 /*=================================
   Header styling ends here
@@ -361,7 +364,7 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
   .menu a:hover { 
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #6cb3de;
     color: #000; 
   }
 
