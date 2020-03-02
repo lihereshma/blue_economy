@@ -481,10 +481,73 @@ h4 {
 /*=================================
   infographic section styling startss here
 =================================*/
+.infographic { padding: 90px 0; }
 
+.slides { position: relative; }
 
+.active-bar { background-color: #6cb3de; }
 
+.bar { 
+  text-indent: -9999px;
+  padding: 0px 10%; 
+}
 
+.section-title span {
+  width: 6%;
+  height: 4px;
+  margin: 15px 47%;
+  display: block;
+  background: #5faad8;
+  text-indent: -9999px;
+}
+
+.slide-content { 
+  width: 71%;
+  padding: 36px 0; 
+  position: absolute;
+  bottom: 48px;
+  left: 15%;
+  background: rgba(255,255,255,0.6); 
+  text-align: center;  
+}
+
+.slide-content span { 
+  margin-bottom: 40px;
+  font-size: 21px; 
+}
+
+.slide-content p { 
+  width: 80%;
+  margin: 33px 10% 30px;
+  color: #7c7c7c;
+  font-size: medium;   
+}
+
+.arrow {
+  padding: 12px 7%;
+  border-radius: 100%;
+  display: inline-block;
+  color: #7c7c7c;
+  font-size: 30px;
+  text-indent: -9999px; 
+  -webkit-box-shadow: 0px 10px 50px #888; 
+    box-shadow: 0px 10px 50px #888;
+}
+
+.arrow::before{
+  content: "\f105";
+  float: right;
+  font-family: FontAwesome;
+  text-indent: 0;
+}
+
+.slider-bar { 
+  background-color: #cfdde5;
+  width: 50%;
+  margin: 73px 25% 0;
+  font-size: 15px;
+  text-align: center;
+}
 /*=================================
   infographic section styling ends here
 =================================*/
@@ -641,13 +704,17 @@ h6 {
 @media only screen and (min-width: 1024px) {
   h6 a:hover { color: #fff; }
 
-  .facebook:hover { color: #3b579c;}
+  .facebook:hover { color: #3b579c; }
 
-  .twitter:hover { color: #45aae1;}
+  .twitter:hover { color: #45aae1; }
 
-  .google-plus:hover { color: #ce4439;}
+  .google-plus:hover { color: #ce4439; }
 
-  .linkedin:hover { color: #347bb6;}
+  .linkedin:hover { color: #347bb6; }
+
+  .arrow:hover { color: #6cb3de; }
+
+  .bar:hover { background-color: #ccc; }
 
   .menu a:hover { 
     border-bottom: 2px solid #6cb3de;
