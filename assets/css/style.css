@@ -396,7 +396,7 @@ h4 {
   font-size: 14px;
 }
 
-.tabs-content::after{
+/* .tabs-content::after{
   content: "";
   width: 1.5%;
   height: 10%;
@@ -406,7 +406,7 @@ h4 {
   top: 18%;
   right: -1.2%;
   opacity: 0.5;
-}
+} */
 
 
 .articles-description div:not(:first-child){
@@ -422,8 +422,8 @@ h4 {
 
 .newsletter form div:first-child { width: 59%; }
 
-.newsletter{ 
-  padding: 50px 0px; 
+.newsletter { 
+  padding: 58px 0px; 
   background-color: #5fb0dd;
 }
 
@@ -435,12 +435,12 @@ h4 {
 .newsletter span {
   margin-bottom: 5px;
   display: block;
-  color: #a1cae3;
+  color: #a1cde6;
   font-size: small;
   text-transform: capitalize; 
 }
 
-.newsletter input[type="email"]{
+.newsletter input[type="email"] {
   width: 100%;
   padding: 21px 42% 21px 8%;
   border: none;
@@ -448,28 +448,24 @@ h4 {
   color: #1c4965;
 }
 
-.send{
+.send {
   text-indent: -9999px;
   display: inline-block;
 }
 
-.send::before{
+.send::before {
   content: "\f1d8";
   padding: 16px 21px;
   text-indent: 0;
   float: right;
   background-color: #fff;
-  color: gray;
+  color: #7c7c7c;
   font-family: FontAwesome;
   font-size: 25px;
 }
 /*=================================
   newsletter section styling ends here
 =================================*/ 
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -477,13 +473,80 @@ h4 {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer a { color: #7c7c7c; }
 
+.social-links li:last-child { margin-right: 32px; }
 
+footer .wrapper { 
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
 
+footer { 
+  padding: 31px 0px;
+  background-color: #2f2f2f;   
+}
 
+h6 { 
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
 
+.contact-button{
+  padding: 16px 43px;
+  background-color: #7b7b7b;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.right-links {
+  display: flex;
+  justify-content: space-between;
+}
 
+.social-links a{
+  padding: 10px 14px;
+  font-size: 23px;
+}
+
+.facebook,.twitter,
+.linkedin,.google-plus{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.facebook::before{
+  content: "\f09a";
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.twitter::before{
+  content: "\f099";
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.linkedin::before{
+  content: "\f0e1";
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.google-plus::before{
+  content: "\f0d5";
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -496,6 +559,17 @@ h4 {
     color: #000; 
   }
 
+  h6 a:hover { color: #fff; }
+
+  .contact-button:hover { background-color: #64635a;}
+
+  .facebook:hover { color: #3b579c;}
+
+  .twitter:hover { color: #45aae1;}
+
+  .google-plus:hover { color: #ce4439;}
+
+  .linkedin:hover { color: #347bb6;}
 
 }  
 /*media query for 995px starts here*/
