@@ -116,10 +116,10 @@ header { margin-top: 21px;}
 
 .search-form { display: none; }
 
-.search-box {
+/* .search-box {
   display: block; 
   margin-top: 11px; 
-}
+} */
 
 .open .bar-two { display: none; }
 
@@ -161,6 +161,7 @@ header .wrapper {
   display: inline-block;
   text-indent: -9999px;
 }
+
 .search-button::before {
   content: "\f002"; 
   float: right;
@@ -822,12 +823,9 @@ h6 {
 @media only screen and (max-width: 995px) {
   .banner-description::before { bottom: 42% };
 
-  .search-box { display: none; }
+  .search-button { display: none; }
 
-  .event-content { 
-    width: 100%;
-    display: block; 
-  }
+  .hamburger { display: block;}
 
   .event-image { width: 100%; }
 
@@ -836,4 +834,113 @@ h6 {
   .articles .wrapper { width: 90%; }
 
   .articles-description { width: 55%; }
+
+  .newsletter .wrapper { width: 58%; }
+
+  .menu {
+    width: 90%;
+    display: none;
+    position: absolute; 
+    top: 100%;
+    right: 5%;
+    left: 5%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    -webkit-box-shadow: 5px 5px 18px #ccc;
+      box-shadow: 5px 5px 18px #ccc;
+  }
+ 
+  .menu ul {
+   -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    padding: 2%;
+  }
+
+  .menu li {
+    display: block;
+    padding: 1%;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .menu li a {
+    padding: 0;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .event-content { 
+    width: 100%;
+    display: block; 
+  }
+
+  .slider-bar{
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+
+  .banner { padding: 55px 0; }
+
+  .banner-title::after { display: none; }
+  
+  .banner-description::before { display: none; }
+
+  .articles-content { display: block; }
+
+  .link { width: 30%; }
+
+  .link::before { display: none; }
+
+  .articles-description { width: 100%; }
+
+  .newsletter .wrapper { width: 90%; }
+
+  .newsletter form div:first-child { width: 61%; }
+
+  .banner-title {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .banner-description {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 60px;
+    position: static;
+  }
+  
+  .links-content {
+    width: 100%;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } 
+}
+
+/*media query for 360px starts here*/
+@media only screen and (max-width: 360px) {
+
+  .tab-links li:first-child { width: 100%; }
+
+  .tab-links li:last-child { margin: 10px 20%; }
+
+  .link { width: 100%; }
+
+  .right-links { display: block; }
+
+  .infographic { padding: 40px 0; }
+
+  footer .wrapper { 
+    width: 90%;
+    display: block;
+    text-align: center;
+  }
+
 }
